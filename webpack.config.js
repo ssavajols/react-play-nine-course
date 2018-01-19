@@ -8,7 +8,7 @@ module.exports = {
   output: {
     // options related to how webpack emits results
 
-    path: path.resolve(__dirname, "public/assets/"), // string
+    path: path.resolve(__dirname, "docs/assets/"), // string
     // the target directory for all output files
     // must be an absolute path (use the Node.js path module)
 
@@ -68,7 +68,7 @@ module.exports = {
   // changes chunk loading behavior and available modules
 
   devServer: {
-    contentBase: path.join(__dirname, 'public'), // boolean | string | array, static file location
+    contentBase: path.join(__dirname, 'docs'), // boolean | string | array, static file location
     compress: true, // enable gzip compression
     historyApiFallback: true, // true for index.html upon 404, object for multiple paths
     hot: false, // hot module replacement. Depends on HotModuleReplacementPlugin
