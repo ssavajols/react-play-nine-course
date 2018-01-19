@@ -17,6 +17,10 @@ npm install
 npm start
 ```
 
+## React achitecture
+
+![React architecture](https://ssavajols.github.io/react-play-nine-course/assets/architecture.png)
+
 ### React component function and class
 
 React components can be native javascript functions or native (transpiled) javascript classes.
@@ -50,13 +54,15 @@ ReactDOM.render(
   document.getElementById('app'));
 ```
 
-## Component typscript type checking
+### Component typscript type checking
 
 With typescript, we can add type checking support to components.
 
 Declaring an interface and associating it with the props or state properties on a class component or function argument component.
 
 It helps to get code completion and documentation for developers.
+
+Using props type checking by typscript against React.propTypes offer compile analysis instead of runtime analysis.
 
 ```jsx
 
@@ -94,7 +100,7 @@ ReactDOM.render(
   document.getElementById('app'));
 ```
 
-## Component state and props
+### Component state and props
 
 Each component got a state and  props. All can be updated and will update components rendering. But, purpose of props are to not being modified. To get dynamic datas for components, we use states.
 
@@ -120,7 +126,7 @@ class MyComponent extends React.Component {
 }
 ```
 
-## Initial state
+### Initial state
 
 We can set a static method initialState to set the default state of a component. We can reset the state of the component by call setState with initialState.
 
@@ -140,7 +146,7 @@ class MyComponent extends React.Component {
 }
 ```
 
-## Event handling
+### Event handling
 
 Event listeners must be declared as DOM event listeners.
 To be sure of event content we can declare event handler method as arrow function. This is to avoiding bind method.
