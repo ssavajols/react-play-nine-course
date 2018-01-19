@@ -1,0 +1,9 @@
+.used {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.selected {
+  cursor: not-allowed;
+  color: lightgreen;
+}
