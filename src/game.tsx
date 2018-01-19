@@ -53,7 +53,7 @@ export class Game extends React.Component {
       answerIsCorrect: null,
       numberOfStars: Game.randomNumbers(),
       usedNumbers: [...prevState.usedNumbers, ...prevState.selectedNumbers],
-      doneStatus: prevState.usedNumbers.length + prevState.selectedNumbers.length === 9 ? 'OK' : ''
+      doneStatus: prevState.usedNumbers.length + prevState.selectedNumbers.length === 9 ? 'Congratulations' : ''
     }));
   } 
   
@@ -69,7 +69,7 @@ export class Game extends React.Component {
       numberOfStars: Game.randomNumbers(),
       answerIsCorrect: null,
       selectedNumbers: [],
-      doneStatus: prevState.redraws === 1 ? 'Stop' : ''
+      doneStatus: prevState.redraws === 1 ? 'Game over !' : ''
     }));
   }
 

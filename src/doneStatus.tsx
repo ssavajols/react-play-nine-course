@@ -6,7 +6,7 @@ export interface IDoneStatusProps {
 }
 
 export const DoneStatus = (props: IDoneStatusProps) => (
-  <div>
+  <div className="text-center">
     <h1>{props.doneStatus}</h1>
     <button onClick={props.reset}>Play again</button>
   </div>

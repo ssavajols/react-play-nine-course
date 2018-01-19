@@ -10,12 +10,12 @@ export function Stars(props: IStarsProps) {
   let stars = [];
   
   for( let index=0; index<props.numberOfStars; index++) {
-    stars.push(<i key={index} className="fa fa-star">X</i>);
+    stars.push(<i key={index} className="fa fa-star"></i>);
   }
   
   return (
     <div className='col-5'>
-      <i className="fa fa-star"></i>
+      {stars} 
     </div>
   );
 }
