@@ -88,10 +88,9 @@ export class Game extends React.Component {
               answerIsCorrect={this.state.answerIsCorrect}
               acceptAnswer={this.acceptAnswer}
               selectedNumbers={this.state.selectedNumbers} 
-              checkAnwser={this.checkAnswer} />
-          <button
-              disabled={this.state.redraws === 0}
-              onClick={this.redraw}>redraw</button>
+              checkAnwser={this.checkAnswer}
+              redraws={this.state.redraws}
+              redraw={this.redraw} />
           <Answer 
               unSelectNumber={this.unSelectNumber} 
               selectedNumbers={this.state.selectedNumbers} />

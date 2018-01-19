@@ -5,6 +5,7 @@ React training course with play nine game
 - Démonstration : [https://ssavajols.github.io/react-play-nine-course/](https://ssavajols.github.io/react-play-nine-course/)
 
 ## Install
+
 ```shell
 npm install
 ```
@@ -85,7 +86,7 @@ ReactDOM.render(
 // Cause compile error
 ReactDOM.render(
   <MyComponent content={1}>,
-  document.getElementById('app')); // 
+  document.getElementById('app'));
 
 // Compile OK
 ReactDOM.render(
@@ -95,7 +96,7 @@ ReactDOM.render(
 
 ## Component state and props
 
-Each component got a state and  props. All can be updated and will update components rendering. But, purpose of props are to not being modified. To get dynamic datas for components, we use states. 
+Each component got a state and  props. All can be updated and will update components rendering. But, purpose of props are to not being modified. To get dynamic datas for components, we use states.
 
 Each time we call setState method from a component, we are updating the component rendering, if necessary. We can get the last state of the component by using a function instead of an object with the setState methods. This can resolve concurrency async calls of setState methods.
 

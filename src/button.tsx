@@ -3,8 +3,10 @@ import * as React from 'react';
 export interface IButtonProps {
   checkAnwser: () => void;
   acceptAnswer: () => void;
+  redraw: () => void;
   selectedNumbers: number[];
   answerIsCorrect: boolean;
+  redraws: number;
 }
 
 export function Button(props: IButtonProps) {
@@ -13,19 +15,22 @@ export function Button(props: IButtonProps) {
   switch(props.answerIsCorrect) {
     case true:
       button = 
-        <button 
+        <button
+          className="btn btn-success" 
           onClick={props.acceptAnswer}
-          >/</button>;
+          ><i className="fa fa-check"></i></button>;
     break;
     case false:
       button = 
         <button 
+          className="btn btn-danger"   
           disabled={true}
-          >X</button>;
+          ><i className="fa fa-times"></i></button>;
     break;
     default:
       button = 
         <button 
+          className="btn"
           disabled={props.selectedNumbers.length === 0}
           onClick={props.checkAnwser}
           >=</button>;
@@ -33,6 +38,12 @@ export function Button(props: IButtonProps) {
   return (
     <div className='col-2'>
       {button}  
+      <br />
+      <button
+              className="btn btn-warning btn-sm"
+              disabled={props.redraws === 0}
+              onClick={props.redraw}>
+              <i className="fa fa-refresh"></i> {props.redraws}</button>
     </div>
   );
 }

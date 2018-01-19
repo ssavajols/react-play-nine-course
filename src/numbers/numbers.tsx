@@ -21,12 +21,11 @@ export class Numbers extends React.Component {
     if( this.props.selectedNumbers.indexOf(number) >= 0 ) {
       return 'selected';
     }
-
   }
 
   render() {
     return (
-      <div className='card text-center'>
+      <div className='text-center'>
         <div>
           {Numbers.list.map((number,i) => <span key={i} className={this.classNameNumber(number)}
           onClick={() => this.props.selectNumber(number)}

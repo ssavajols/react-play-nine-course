@@ -15,7 +15,7 @@ export function Stars(props: IStarsProps) {
   
   return (
     <div className='col-5'>
-      {stars}
+      <i className="fa fa-star"></i>
     </div>
   );
 }
