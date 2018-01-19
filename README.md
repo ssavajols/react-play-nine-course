@@ -150,7 +150,7 @@ Without arrow function
 // ES6 class
 class MyComponent extends React.Component {
 
-  clickHandler{
+  clickHandler(event) {
     ...
   }
 
