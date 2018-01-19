@@ -19,7 +19,7 @@ npm start
 
 ## React achitecture
 
-![Architecture](https://ssavajols.github.io/react-play-nine-course/assets/architecture.png =50%x)
+![Architecture](https://ssavajols.github.io/react-play-nine-course/assets/architecture.png | width=300)
 
 ### React component function and class
 
