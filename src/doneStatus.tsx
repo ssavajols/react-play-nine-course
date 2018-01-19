@@ -5,16 +5,9 @@ export interface IDoneStatusProps {
   doneStatus: string;
 }
 
-export class DoneStatus extends React.Component {
-
-  props: IDoneStatusProps;
-
-  render() {
-    return (
-      <div>
-        <h1>{this.props.doneStatus}</h1>
-        <button onClick={this.props.reset}>Play again</button>
-      </div>
-    );
-  }
-}
+export const DoneStatus = (props: IDoneStatusProps) => (
+  <div>
+    <h1>{props.doneStatus}</h1>
+    <button onClick={props.reset}>Play again</button>
+  </div>
+);
