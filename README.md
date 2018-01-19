@@ -2,6 +2,7 @@
 
 React training course with play nine game
 
+- Démonstration : [https://ssavajols.github.io/react-play-nine-course/](https://ssavajols.github.io/react-play-nine-course/)
 
 ## Install
 ```shell
